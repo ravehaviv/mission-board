@@ -9,123 +9,268 @@ body{
     background-image: url("images/tile.jpg");
     background-attachment: fixed;
 }
+@media screen and (min-width: 450px) {
+    
+    .title img{
+        display: block;
+        margin: auto;
+    }
 
-.title img{
-    display: block;
-    margin: auto;
-}
+    .inputuser{
+        position: relative;
+        background-image: url("images/formbg.jpg") ;
+        height: 200px;
+        width: 500px;
+        margin: auto;
+    }
 
-.inputuser{
-    position: relative;
-    background-image: url("images/formbg.jpg") ;
-    height: 200px;
-    width: 500px;
-    margin: auto;
-}
+    .inputuser > label:nth-of-type(1){
 
-.inputuser > label:nth-of-type(1){
+        position: absolute;
+        bottom: 20px;
+    }
 
-    position: absolute;
-    bottom: 20px;
-}
+    .inputuser > input:nth-of-type(1){
+        background-image: url("images/cap.PNG");
+        height: 25px;
+        width: 250px;
+        position: absolute;
+        bottom: 126px;
+        left: 85px;
+        border: 1px solid;
+        border: unset;
+    
+    }
 
-.inputuser > input:nth-of-type(1){
-    background-image: url("images/cap.PNG");
-    height: 25px;
-    width: 250px;
-    position: absolute;
-    bottom: 126px;
-    left: 85px;
-    border: 1px solid;
-    border: unset;
+
+
+    .inputuser > input:nth-of-type(2){
+        font-weight: bold;
+        position: absolute;
+        bottom: 20px;
+        left: 85px;
+    }
+
+    .inputuser > label:nth-of-type(2){
+
+        position: absolute;
+        bottom: 20px;
+        left: 230px;
+    }
+
+    .inputuser > input:nth-of-type(3){
+
+        position: absolute;
+        bottom: 20px;
+        left: 320px;
+    }
+
+    .inputuser >button{
+        position: absolute;
+        bottom: 20px;
+        left: 440px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid black;
+        transition: 0.5ms;
+    }
+    .inputuser >button:hover{
+        cursor: pointer;
+        background-color:black; 
+        color: white;
+        
+    }
+
+    .sectionbox{
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px;
+
+    }
+
+    .notepad{
+        display: inline;
+        background-image: url(images/notebg.png);
+        background-repeat: no-repeat;
+        height: 250px;
+        max-width: 250px;
+        padding: 17px;
+        /* transform: rotate(15deg); */
+    }
+
+    .inputbox  p{
+        position: relative;
+        right: 10px;
+        height: 150px;
+        width: 150px;
+        line-break: auto;
+        overflow:auto ;
+
+    }
+
+
+    .erase{
+        background: none;
+        position: absolute;
+        bottom: 270px;
+        left: 140px;
+    }
+    .erase:hover{
+        cursor: pointer;
+    }
+    .erase:active{
+        transform: scale(0.8);
+    }
+
+    .datebox{
+        position: relative;
+        bottom: 25px;
+        transform: scale(1);
+    }
+
+    .hourbox{
+        position: relative;
+        bottom: 40px;
+    }
+
    
 }
 
+@media screen and (max-width: 450px) {
+    
+        .title img{
+            display: block;
+            margin: auto;
+        }
+        
+        .inputuser{
+            position: relative;
+            background-image: url("images/formbg.jpg") ;
+            height: 200px;
+            width: 300px;
+            margin: auto;
+        }
+        
+        .inputuser > label:nth-of-type(1){
+        
+            position: absolute;
+            bottom: 55px;
+        }
+        
+        .inputuser > input:nth-of-type(1){
+            background-image: url("images/cap.PNG");
+            height: 25px;
+            width: 150px;
+            position: absolute;
+            bottom: 126px;
+            left: 85px;
+            border: 1px solid;
+            border: unset;
+        
+        }
+        
+        
+        
+        .inputuser > input:nth-of-type(2){
+            font-weight: bold;
+            position: absolute;
+            bottom: 55px;
+            left: 85px;
+        }
+        
+        .inputuser > label:nth-of-type(2){
+        
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+        }
+        
+        .inputuser > input:nth-of-type(3){
+        
+            position: absolute;
+            bottom: 20px;
+            left: 88px;
+        }
+        
+        .inputuser >button{
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid black;
+            transition: 0.5ms;
+        }
+        .inputuser >button:hover{
+            cursor: pointer;
+            color: white;
+            background-color: black;
+        }
+        
+        .sectionbox{
+        
+            display: grid;
+            grid-template-columns: auto auto ;
+            max-width: 270px;
+            gap: 15px;
+            margin: auto;
+            padding: 40px;
+        
+        }
+        
+        .notepad{
+            display: inline;
+            background-image: url(images/notebg.png);
+            background-repeat: no-repeat;
+            height: 250px;
+            max-width: 100px;
+            padding: 17px;
+            transform: rotate(2deg);
+        }
+        
+        .inputbox  p{
+            position: relative;
+            right: 10px;
+            height: 150px;
+            width: 100px;
+            line-break: auto;
+            overflow:auto ;
+            transform: rotate(-2deg);
+        
+        }
+        
+        
+        .erase{
+            background: none;
+            position: absolute;
+            bottom: 275px;
+            left: 95px;
+        }
+        .erase:hover{
+            cursor: pointer;
+        }
+        .erase:active{
+            transform: scale(0.8);
+        }
 
+    
+        .datebox{
+            position: relative;
+            bottom: 25px;
+        
+        }
+        
+        .hourbox{
+            position: relative;
+            bottom: 40px;
+        }
 
-.inputuser > input:nth-of-type(2){
-    font-weight: bold;
-    position: absolute;
-    bottom: 20px;
-    left: 85px;
-}
+        
+    
 
-.inputuser > label:nth-of-type(2){
-
-    position: absolute;
-    bottom: 20px;
-    left: 230px;
-}
-
-.inputuser > input:nth-of-type(3){
-
-    position: absolute;
-    bottom: 20px;
-    left: 320px;
-}
-
-.inputuser >button{
-    position: absolute;
-    bottom: 20px;
-    left: 440px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid black;
-    color:rgb(85, 107, 47);
-    transition: 0.5ms;
-}
-.inputuser >button:hover{
-    cursor: pointer;
-    background-color:rgb(85, 107, 47); 
-    color: white;
-}
-
-.sectionbox{
-
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
-
-}
-
-.notepad{
-    display: inline;
-    background-image: url(images/notebg.png);
-    background-repeat: no-repeat;
-    height: 250px;
-    max-width: 250px;
-    padding: 17px;
-}
-
-.inputbox  p{
-    position: relative;
-    right: 10px;
-    height: 150px;
-    width: 150px;
-    line-break: auto;
-    overflow:auto ;
-
-}
-
-
-.erase{
-    background: none;
-    position: absolute;
-    bottom: 270px;
-    left: 140px;
-}
-
-.datebox{
-    position: relative;
-    bottom: 25px;
-}
-
-.hourbox{
-    position: relative;
-    bottom: 40px;
-}
-
+    }
 
 

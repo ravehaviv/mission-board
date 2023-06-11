@@ -132,5 +132,4 @@ function erase(x){
    getlocall.splice(x,1);
    addtolocal(getlocall);
    display(getlocall);
-   
 }
