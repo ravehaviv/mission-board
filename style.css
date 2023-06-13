@@ -98,7 +98,6 @@ body{
         height: 250px;
         max-width: 250px;
         padding: 17px;
-        /* transform: rotate(15deg); */
     }
 
     .inputbox  p{
@@ -110,21 +109,51 @@ body{
         overflow:auto ;
 
     }
+    
+    
+    .gg-close,.erase{
+        display: none;
 
+    }
 
-    .erase{
+    .notepad:hover .gg-close {
         background: none;
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 22px;
+        height: 22px;
+        border: 2px solid transparent;
+        border-radius: 40px
+    }
+    
+    .notepad:hover .gg-close::after ,.notepad:hover .gg-close::before
+     {
+        content: "";
+        display: block;
+        box-sizing: border-box;
         position: absolute;
+        width: 16px;
+        height: 2px;
+        background: currentColor;
+        transform: rotate(45deg);
+        border-radius: 5px;
+    }
+    
+    
+    .notepad:hover .gg-close::after {
+        transform: rotate(-45deg)
+    }
+    .notepad:hover .erase {
+        position: relative;
+        left: 130px;
         bottom: 270px;
-        left: 140px;
-    }
-    .erase:hover{
         cursor: pointer;
-    }
-    .erase:active{
-        transform: scale(0.8);
+
     }
 
+    
     .datebox{
         position: relative;
         bottom: 25px;
@@ -225,7 +254,7 @@ body{
             display: inline;
             background-image: url(images/notebg.png);
             background-repeat: no-repeat;
-            height: 250px;
+            height: 170px;
             max-width: 100px;
             padding: 17px;
             transform: rotate(2deg);
@@ -243,29 +272,58 @@ body{
         }
         
         
-        .erase{
+        .gg-close,.erase{
+            display: none;
+    
+        }
+    
+        .notepad:hover .gg-close {
             background: none;
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs,1));
+            width: 22px;
+            height: 22px;
+            border: 2px solid transparent;
+            border-radius: 40px
+        }
+        
+        .notepad:hover .gg-close::after ,.notepad:hover .gg-close::before
+         {
+            content: "";
+            display: block;
+            box-sizing: border-box;
             position: absolute;
-            bottom: 275px;
-            left: 95px;
+            width: 16px;
+            height: 2px;
+            background: currentColor;
+            transform: rotate(45deg);
+            border-radius: 5px;
         }
-        .erase:hover{
+        
+        
+        .notepad:hover .gg-close::after {
+            transform: rotate(-45deg)
+        }
+        .notepad:hover .erase {
+            position: relative;
+            left: 90px;
+            bottom: 270px;
             cursor: pointer;
-        }
-        .erase:active{
-            transform: scale(0.8);
+    
         }
 
     
         .datebox{
             position: relative;
-            bottom: 25px;
+            bottom: 60px;
         
         }
         
         .hourbox{
             position: relative;
-            bottom: 40px;
+            bottom: 80px;
         }
 
         
