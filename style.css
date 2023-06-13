@@ -95,8 +95,8 @@ body{
         display: inline;
         background-image: url(images/notebg.png);
         background-repeat: no-repeat;
-        height: 250px;
-        max-width: 250px;
+        height: 230px;
+        max-width: 150px;
         padding: 17px;
     }
 
@@ -148,7 +148,7 @@ body{
     .notepad:hover .erase {
         position: relative;
         left: 130px;
-        bottom: 270px;
+        bottom: 276px;
         cursor: pointer;
 
     }
@@ -255,7 +255,7 @@ body{
             background-image: url(images/notebg.png);
             background-repeat: no-repeat;
             height: 170px;
-            max-width: 100px;
+            max-width:100px;
             padding: 17px;
             transform: rotate(2deg);
         }
@@ -263,7 +263,7 @@ body{
         .inputbox  p{
             position: relative;
             right: 10px;
-            height: 150px;
+            height: 110px;
             width: 100px;
             line-break: auto;
             overflow:auto ;
@@ -309,7 +309,7 @@ body{
         .notepad:hover .erase {
             position: relative;
             left: 90px;
-            bottom: 270px;
+            bottom: 230px;
             cursor: pointer;
     
         }
@@ -317,13 +317,13 @@ body{
     
         .datebox{
             position: relative;
-            bottom: 60px;
+            bottom: 25px;
         
         }
         
         .hourbox{
             position: relative;
-            bottom: 80px;
+            bottom: 40px;
         }
 
         
